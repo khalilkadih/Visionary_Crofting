@@ -1,0 +1,12 @@
+services:
+  database:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+  visionarycrofting:
+    image: openjdk:11
+    ports:
+      - 8080:8080
