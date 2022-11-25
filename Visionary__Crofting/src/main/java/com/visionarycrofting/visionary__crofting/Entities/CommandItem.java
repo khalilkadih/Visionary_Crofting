@@ -18,7 +18,6 @@ public class CommandItem {
     private String referenceOfItem;
     private Integer itemQuantity;
     private Double itemUnitPrice;
-    @Column(name = "productReference")
     @ManyToOne
     private Product product;
     @ManyToOne

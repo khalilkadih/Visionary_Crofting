@@ -23,7 +23,6 @@ public class Stock {
     private String email;
     @Column
     private String password;
-    @Column
     @OneToMany(mappedBy = "stock")
     private List<Product> product;
     @OneToMany(mappedBy = "stock")

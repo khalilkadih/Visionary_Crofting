@@ -18,12 +18,10 @@ public class CallOffer {
     private String refferenceOffer;
     @Column(nullable = false)
     private String productName;
-    @Column
     @ManyToOne
     private Stock stock;
     @ManyToOne
     private Vendor vendor;
-    @Column
     @Enumerated(value = EnumType.STRING)
     private Status status;
 }
