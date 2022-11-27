@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Vendor {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column
     private String firstName;

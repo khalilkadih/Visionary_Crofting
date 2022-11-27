@@ -12,16 +12,18 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class CallOffer {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(unique = true,nullable = false)
     private String refferenceOffer;
     @Column(nullable = false)
     private String productName;
+
     @ManyToOne
     private Stock stock;
     @ManyToOne
     private Vendor vendor;
+
     @Enumerated(value = EnumType.STRING)
     private Status status;
 }

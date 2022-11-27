@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Command {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String reference;
     private Date commandDate;
