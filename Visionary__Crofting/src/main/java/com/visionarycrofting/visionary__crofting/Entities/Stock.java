@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Stock {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column
     private String firstName;
@@ -23,8 +23,10 @@ public class Stock {
     private String email;
     @Column
     private String password;
+
     @OneToMany(mappedBy = "stock")
     private List<Product> product;
+
     @OneToMany(mappedBy = "stock")
     private List<CallOffer> callOffers;
 
