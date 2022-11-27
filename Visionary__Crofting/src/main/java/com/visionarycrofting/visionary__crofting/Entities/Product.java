@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @OneToMany(mappedBy = "product")
     private List<CommandItem> referenceOfProduct;
