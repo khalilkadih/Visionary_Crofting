@@ -8,21 +8,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VisionaryCroftingApplication  {
+public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
-    CommandServiceImpl cs ;
+    private CommandServiceImpl cs ;
+    //commandServiceImpl cs = new commandServiceImpl();
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
 
     public void run(String... args) throws Exception {
-
         //Command c = new Command();
         //c.setReference("HHH");
         //c.setCommandDate("1999-22-44");
         //c.setCommandTotalPrice(123.0);
 
         //cs.saveCommande(c);
-
     }
 }
