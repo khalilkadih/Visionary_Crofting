@@ -2,7 +2,7 @@ package com.visionarycrofting.visionary__crofting.Service;
 
 import com.visionarycrofting.visionary__crofting.Entities.Product;
 
-public interface productService {
+public interface ProductService {
     Product saveProduct(Product product);
     int deleteProduct(int i);
     Product updateProduct(Product product);

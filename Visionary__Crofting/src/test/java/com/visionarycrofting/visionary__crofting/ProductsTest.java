@@ -2,7 +2,7 @@ package com.visionarycrofting.visionary__crofting;
 
 import com.visionarycrofting.visionary__crofting.Entities.Product;
 import com.visionarycrofting.visionary__crofting.Exception.EmptyProductException;
-import com.visionarycrofting.visionary__crofting.Service.productService;
+import com.visionarycrofting.visionary__crofting.Service.ProductService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class ProductsTest {
     @Autowired
-    productService productService;
+    ProductService productService;
     @Test
     public void productShouldBeSavedSuccessfully(){
         Product product = new Product();

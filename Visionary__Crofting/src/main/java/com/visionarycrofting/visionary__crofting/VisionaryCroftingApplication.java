@@ -1,8 +1,7 @@
 package com.visionarycrofting.visionary__crofting;
 
 import com.visionarycrofting.visionary__crofting.Entities.Command;
-import com.visionarycrofting.visionary__crofting.Service.commandService;
-import com.visionarycrofting.visionary__crofting.Service.commandServiceImpl;
+import com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
-    commandServiceImpl cs ;
+    CommandServiceImpl cs ;
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
