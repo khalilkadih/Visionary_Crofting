@@ -12,13 +12,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
     commandServiceImpl cs ;
+    //commandServiceImpl cs = new commandServiceImpl();
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-       /* Command c = new Command();
+        /*Command c = new Command();
         c.setReference("HHH");
         c.setCommandDate("1999-22-44");
         c.setCommandTotalPrice(123.0);

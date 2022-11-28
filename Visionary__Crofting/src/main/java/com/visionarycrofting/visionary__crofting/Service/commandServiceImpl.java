@@ -16,14 +16,14 @@ public class commandServiceImpl implements  commandService{
 
     @Override
     public Command saveCommande(Command command) {
-        String commandeDtae = command.getCommandDate();
-        String ref = command.getReference();
+       /* String commandeDtae = command.getCommandDate();
+        String ref = command.getReference();*/
         Command com = commandRepository.save(command);
-        if(com == null){
+       /* if(com == null){
             throw  new CommandNotFoundException();
         } else if (commandeDtae.isEmpty() || ref.isEmpty() ) {
             throw  new CommandNotFoundException();
-        }
+        }*/
         return com;
     }
 
