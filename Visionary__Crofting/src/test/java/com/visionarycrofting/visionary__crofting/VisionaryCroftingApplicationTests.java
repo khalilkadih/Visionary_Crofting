@@ -27,5 +27,4 @@ class VisionaryCroftingApplicationTests {
         Command lastcheck = commandelist.get(commandelist.size() - 1);
         assertEquals(c.getReference(),lastcheck.getReference());
     }
-
 }

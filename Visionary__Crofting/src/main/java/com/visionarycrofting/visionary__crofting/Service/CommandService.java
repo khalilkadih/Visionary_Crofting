@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface CommandService {
     Command saveCommande(Command command);
-
     List<Command> findAll();
+    Command update(Command command);
+    void  delete(int id);
 }
