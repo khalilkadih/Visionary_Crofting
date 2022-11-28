@@ -18,11 +18,11 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-       /* Command c = new Command();
+       Command c = new Command();
         c.setReference("HHH");
         c.setCommandDate("1999-22-44");
         c.setCommandTotalPrice(123.0);
 
-        cs.saveCommande(c);*/
+        cs.saveCommande(c);
     }
 }
