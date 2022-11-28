@@ -27,8 +27,23 @@ public class commandServiceImpl implements  commandService{
         return com;
     }
 
+
     @Override
     public List<Command> findAll() {
-        return null;
+        return commandRepository.findAll();
+    }
+
+    @Override
+    public Command update(Command command) {
+        Command existingCommand=commandRepository.findById(command.getId()).orElse(null);
+        existingCommand.setCommandDate(command.getCommandDate());
+        existingCommand.setCommandItem(command.getCommandItem());
+        existingCommand.setCommandTotalPrice(command.getCommandTotalPrice());
+        return commandRepository.save(existingCommand);
+
+    }
+    @Override
+    public void delete(int id) {
+        commandRepository.deleteById(id);
     }
 }
