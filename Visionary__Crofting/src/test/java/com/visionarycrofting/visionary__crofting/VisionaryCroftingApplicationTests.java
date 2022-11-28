@@ -9,5 +9,4 @@ class VisionaryCroftingApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
