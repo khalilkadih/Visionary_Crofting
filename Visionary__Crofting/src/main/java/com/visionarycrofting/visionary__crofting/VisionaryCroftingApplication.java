@@ -16,20 +16,13 @@ public class VisionaryCroftingApplication  {
     }
 
     public void run(String... args) throws Exception {
-<<<<<<< HEAD
+
         //Command c = new Command();
         //c.setReference("HHH");
         //c.setCommandDate("1999-22-44");
         //c.setCommandTotalPrice(123.0);
 
         //cs.saveCommande(c);
-=======
-       Command c = new Command();
-        c.setReference("HHH");
-        c.setCommandDate("1999-22-44");
-        c.setCommandTotalPrice(123.0);
 
-        cs.saveCommande(c);
->>>>>>> main
     }
 }
