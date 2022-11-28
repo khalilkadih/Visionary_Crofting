@@ -40,8 +40,25 @@ public class ProductsTest {
         product.setDescription("description");
         product.setQuantity(10);
         Product product1 = productService.saveProduct(product);
-        Assertions.assertNotNull(product1);
-        Assertions.assertEquals(product1,product);
+        Product product11 = productService.findProduct(product1.getId());
+        product11.setQuantity(900);
+        Product product2 = productService.updateProduct(product);
+        Assertions.assertNotNull(product2);
+        Assertions.assertEquals(product2,product11);
+    }
+    @Test
+    public void productShouldBeDeletedSuccessfully(){
+        Product product = new Product();
+        product.setProductName("product1");
+        product.setProductPrice(12.00);
+        product.setCategory("cat1");
+        product.setDescription("description");
+        product.setQuantity(10);
+        Product savedProduct = productService.saveProduct(product);
+        int id = savedProduct.getId();
+        productService.deleteProduct(id);
+        Product searchedProduct = productService.findProduct(id);
+        Assertions.assertNull(savedProduct);
     }
 
 
