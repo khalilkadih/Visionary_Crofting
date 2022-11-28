@@ -17,7 +17,7 @@ public class Command {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String reference;
-    private Date commandDate;
+    private String commandDate;
     private Double commandTotalPrice;
     @ManyToOne
     private Client client;
