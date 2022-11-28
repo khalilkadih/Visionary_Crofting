@@ -2,9 +2,8 @@ package com.visionarycrofting.visionary__crofting.Controller;
 
 
 import com.visionarycrofting.visionary__crofting.Entities.Command;
-import com.visionarycrofting.visionary__crofting.Service.commandServiceImpl;
+import com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.List;
 @RestController
 public class CommandController {
     @Autowired
-    commandServiceImpl Commandservice;
+    CommandServiceImpl Commandservice;
 
     @GetMapping("/salim")
     public String  hello(){

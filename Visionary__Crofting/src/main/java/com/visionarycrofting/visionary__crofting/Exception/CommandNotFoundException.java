@@ -1,4 +1,4 @@
-package com.visionarycrofting.visionary__crofting.Service;
+package com.visionarycrofting.visionary__crofting.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
