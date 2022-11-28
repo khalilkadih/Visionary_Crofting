@@ -2,13 +2,14 @@ package com.visionarycrofting.visionary__crofting.Service;
 
 import com.visionarycrofting.visionary__crofting.Dao.CommandRepository;
 import com.visionarycrofting.visionary__crofting.Entities.Command;
+import com.visionarycrofting.visionary__crofting.Exception.CommandNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 ;import java.util.List;
 
 
 @Service
-public class commandServiceImpl implements  commandService{
+public class CommandServiceImpl implements CommandService {
 
     Command command = new Command();
     @Autowired

@@ -1,7 +1,7 @@
 package com.visionarycrofting.visionary__crofting;
 
 import com.visionarycrofting.visionary__crofting.Entities.Command;
-import com.visionarycrofting.visionary__crofting.Service.commandServiceImpl;
+import com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class VisionaryCroftingApplicationTests {
 
     @Autowired
-    commandServiceImpl cs ;
+    CommandServiceImpl cs ;
     @Test
     void CommandAdd() {
 
