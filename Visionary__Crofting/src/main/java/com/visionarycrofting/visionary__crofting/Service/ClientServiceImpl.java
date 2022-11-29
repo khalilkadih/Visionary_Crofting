@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class ClientServiceImpl implements ClientService {
     Client client=new Client();
@@ -15,6 +17,17 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public Client saveClient(Client client) {
         return clientRepository.save(client);
+    }
+
+    @Override
+    public Client findByEmail(String email) {
+        Client client = clientRepository.findByEmail(email);
+        return client;
+    }
+
+    @Override
+    public Boolean existsByEmail(String email) {
+        return null;
     }
 
     @Override
@@ -29,6 +42,6 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public void delete(int id) {
-
+    clientRepository.deleteById(id);
     }
 }

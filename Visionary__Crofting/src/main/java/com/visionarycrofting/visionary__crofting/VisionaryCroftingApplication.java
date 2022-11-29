@@ -1,8 +1,13 @@
 package com.visionarycrofting.visionary__crofting;
 
+import com.visionarycrofting.visionary__crofting.Dao.ClientRepository;
 import com.visionarycrofting.visionary__crofting.Dao.CommandRepository;
+import com.visionarycrofting.visionary__crofting.Entities.Client;
 import com.visionarycrofting.visionary__crofting.Entities.Command;
+import com.visionarycrofting.visionary__crofting.Entities.CommandItem;
+import com.visionarycrofting.visionary__crofting.Service.ClientServiceImpl;
 import com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl;
+import org.checkerframework.checker.units.qual.C;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,26 +21,14 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
     private CommandServiceImpl cs ;
 
     @Autowired
-    private CommandRepository commandRepository;
+    private ClientServiceImpl clientService;
 
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
 
     public void run(String... args) throws Exception {
-        Command c = new Command();
-        //c.setReference("HHH");
-        //c.setCommandDate("1999-22-44");
-        //c.setCommandTotalPrice(123.0);
-        //cs.saveCommande(c);
 
-<<<<<<< HEAD
 
-=======
-        List<Command> commands=cs.findAll();
-        commands.forEach((c)->{
-        System.out.println(c.getCommandDate());
-        });
->>>>>>> cbf86d41550283d68dd6d92bb666baba9224a46f
     }
 }
