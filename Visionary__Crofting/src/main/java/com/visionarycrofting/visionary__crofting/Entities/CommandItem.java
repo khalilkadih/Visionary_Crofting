@@ -13,7 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class CommandItem {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String referenceOfItem;
     private Integer itemQuantity;
