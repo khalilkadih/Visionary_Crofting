@@ -14,6 +14,12 @@ public class CommandController {
     @Autowired
     CommandServiceImpl Commandservice;
 
+
+    @GetMapping("/commande")
+    public List<Command> findAllCommand(){
+       return Commandservice.findAll();
+    }
+
     @PostMapping("/commande")
     public Command saveCommand(@RequestBody Command command){
         return  Commandservice.saveCommande(command);
@@ -27,9 +33,9 @@ public class CommandController {
     { return Commandservice.update(command, commandeId); }
 
     @DeleteMapping("/commande/{id}")
-    public String deleteCommandById(@PathVariable("id") int commandId)
-    {
+    public String deleteCommandById(@PathVariable("id") int commandId) {
         Commandservice.delete(commandId);
         return "Deleted Successfully";
+
     }
 }
