@@ -69,7 +69,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/OneDrive/Bureau/Visionary_Crofting&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/IdeaProjects/Visionary_Crofting&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -86,16 +86,19 @@
       <recent name="C:\Users\Youcode\OneDrive\Bureau\Visionary_Crofting\Visionary__Crofting\src\main\java\com\visionarycrofting\visionary__crofting\Entities" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+  <component name="RunManager" selected="Spring Boot.VisionaryCroftingApplication">
+    <configuration name="VisionaryCroftingApplicationTests.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Visionary__Crofting" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Visionary__Crofting" />
-      <option name="filePath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.visionarycrofting.visionary__crofting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.visionarycrofting.visionary__crofting" />
+      <option name="MAIN_CLASS_NAME" value="com.visionarycrofting.visionary__crofting.VisionaryCroftingApplicationTests" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,6 +110,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VisionaryCroftingApplicationTests.findAll" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,6 +127,8 @@
       <workItem from="1669364666449" duration="3293000" />
       <workItem from="1669370321409" duration="5732000" />
       <workItem from="1669580612723" duration="20700000" />
+      <workItem from="1669649467449" duration="1238000" />
+      <workItem from="1669707393390" duration="4911000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1669581290951</created>
@@ -172,5 +182,59 @@
     <MESSAGE value="Cration test" />
     <MESSAGE value="Creation Controller" />
     <option name="LAST_COMMIT_MESSAGE" value="Creation Controller" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
+          <line>46</line>
+          <properties class="com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl" method="delete">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>25</line>
+          <properties class="com.visionarycrofting.visionary__crofting.Controller.CommandController" method="deleteCommand">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

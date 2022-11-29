@@ -14,12 +14,16 @@ public class CommandController {
     @Autowired
     CommandServiceImpl Commandservice;
 
-    @GetMapping("/salim")
-    public String  hello(){
-        return "hello world";
+    @GetMapping("/commande")
+    public List<Command> findAllCommand(){
+       return Commandservice.findAll();
     }
     @PostMapping("/commande")
     public Command saveCommand(@RequestBody Command command){
         return  Commandservice.saveCommande(command);
+    }
+    @DeleteMapping ("/delete/{id}")
+    public void deleteCommand(@PathVariable("id") int id ){
+        Commandservice.delete(id);
     }
 }

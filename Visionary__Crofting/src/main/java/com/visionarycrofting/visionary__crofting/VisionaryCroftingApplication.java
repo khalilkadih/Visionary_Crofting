@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.List;
+
 @SpringBootApplication
 public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
@@ -23,5 +25,10 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
         //c.setCommandTotalPrice(123.0);
 
         //cs.saveCommande(c);
+
+        List<Command> commands=cs.findAll();
+        commands.forEach((c)->{
+        System.out.println(c.getCommandDate());
+        });
     }
 }
