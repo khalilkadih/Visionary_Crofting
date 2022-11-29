@@ -2,7 +2,7 @@ package com.visionarycrofting.visionary__crofting.Controller;
 
 
 import com.visionarycrofting.visionary__crofting.Entities.Command;
-import com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl;
+import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,15 +15,13 @@ public class CommandController {
     CommandServiceImpl Commandservice;
 
 
-
-
     @PostMapping("/commande")
     public Command saveCommand(@RequestBody Command command){
         return  Commandservice.saveCommande(command);
     }
 
-    @GetMapping("/commande")
-    public List<Command> findAll() { return Commandservice.findAll();  }
+    @GetMapping("/salim")
+    public List<Command> findAll() { return Commandservice.findAll();}
 
     @PutMapping("/commande/{id}")
     public Command updateCommande(@RequestBody Command command,@PathVariable("id") int commandeId)
