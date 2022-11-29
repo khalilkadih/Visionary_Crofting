@@ -23,7 +23,7 @@ class VisionaryCroftingApplicationTests {
         c.setCommandDate("1999-22-44");
         c.setCommandTotalPrice(123.0);
         cs.saveCommande(c);
-        List<Command> commandelist = cs.findAll();
+        List<Command> commandelist = cs.findAllCommand();
         Command lastcheck = commandelist.get(commandelist.size() - 1);
         assertEquals(c.getReference(),lastcheck.getReference());
     }

@@ -6,6 +6,7 @@ import com.visionarycrofting.visionary__crofting.Exception.CommandNotFoundExcept
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 ;import java.util.List;
+import java.util.Objects;
 
 
 @Service
@@ -17,17 +18,16 @@ public class CommandServiceImpl implements CommandService {
 
     @Override
     public Command saveCommande(Command command) {
-       /* String commandeDtae = command.getCommandDate();
-        String ref = command.getReference();*/
+        String commandeDtae = command.getCommandDate();
+        String ref = command.getReference();
         Command com = commandRepository.save(command);
-       /* if(com == null){
+        if(com == null){
             throw  new CommandNotFoundException();
         } else if (commandeDtae.isEmpty() || ref.isEmpty() ) {
             throw  new CommandNotFoundException();
-        }*/
+        }
         return com;
     }
-
 
     @Override
     public List<Command> findAll() {
@@ -35,11 +35,20 @@ public class CommandServiceImpl implements CommandService {
     }
 
     @Override
-    public Command update(Command command) {
-        Command existingCommand=commandRepository.findById(command.getId()).orElse(null);
-        existingCommand.setCommandDate(command.getCommandDate());
-        existingCommand.setCommandItem(command.getCommandItem());
-        existingCommand.setCommandTotalPrice(command.getCommandTotalPrice());
+    public Command update(Command command, int commandeId) {
+        Command existingCommand=commandRepository.findById(commandeId).get();
+        if (Objects.nonNull(command.getCommandDate()) && !"".equalsIgnoreCase(command.getCommandDate())) {
+            existingCommand.setCommandDate(command.getCommandDate());
+        }
+
+        if (Objects.nonNull(command.getReference()) && !"".equalsIgnoreCase(command.getReference())) {
+            existingCommand.setReference(command.getReference());
+        }
+
+        if (Objects.nonNull(command.getCommandTotalPrice())) {
+            existingCommand.setCommandTotalPrice(command.getCommandTotalPrice());
+        }
+
         return commandRepository.save(existingCommand);
 
     }
