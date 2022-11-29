@@ -1,6 +1,7 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,7 +21,7 @@ public class Client {
     private String password;
     private String phone;
     @OneToMany(mappedBy = "client")
-    @JsonBackReference
+    @JsonIgnore
     private List<Command> command;
 
 }

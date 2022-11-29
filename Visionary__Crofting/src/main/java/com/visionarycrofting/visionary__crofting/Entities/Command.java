@@ -26,6 +26,4 @@ public class Command {
     private Client client;
     @OneToMany(mappedBy = "command")
     private List<CommandItem> commandItem;
-
-
 }
