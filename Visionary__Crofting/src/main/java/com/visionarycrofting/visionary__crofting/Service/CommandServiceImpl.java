@@ -2,10 +2,10 @@ package com.visionarycrofting.visionary__crofting.Service;
 
 import com.visionarycrofting.visionary__crofting.Dao.CommandRepository;
 import com.visionarycrofting.visionary__crofting.Entities.Command;
-import com.visionarycrofting.visionary__crofting.Exception.CommandNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 ;import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -45,6 +45,11 @@ public class CommandServiceImpl implements CommandService {
     }
     @Override
     public void delete(int id) {
-        commandRepository.deleteById(id);
+        Optional<Command> command1 = commandRepository.findById(id);
+        if(command1.isPresent()){
+            commandRepository.deleteById(id);
+        }else{
+            System.out.println("not found");
+        }
     }
 }
