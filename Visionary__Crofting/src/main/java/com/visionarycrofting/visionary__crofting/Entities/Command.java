@@ -1,5 +1,6 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
