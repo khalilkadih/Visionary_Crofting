@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="Creation Controller">
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/ClientController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/ClientRepository.java" afterDir="false" />
@@ -11,6 +12,17 @@
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/ClientService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/ClientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/test/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/test/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplicationTests.java" afterDir="false" />
+>>>>>>> origin
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +146,7 @@
       <workItem from="1669364666449" duration="3293000" />
       <workItem from="1669370321409" duration="5732000" />
       <workItem from="1669580612723" duration="20700000" />
+      <workItem from="1669710118971" duration="2140000" />
       <workItem from="1669649467449" duration="1238000" />
       <workItem from="1669707393390" duration="9760000" />
     </task>
@@ -196,12 +209,39 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
           <line>46</line>
-          <properties class="com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl" method="delete">
+          <properties class="com.visionarycrofting.visionary__crofting.Service.CommandServiceImpl">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+<<<<<<< HEAD
+=======
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>25</line>
+          <properties class="com.visionarycrofting.visionary__crofting.Controller.CommandController">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+>>>>>>> origin
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandServiceImpl.java</url>
           <line>47</line>
