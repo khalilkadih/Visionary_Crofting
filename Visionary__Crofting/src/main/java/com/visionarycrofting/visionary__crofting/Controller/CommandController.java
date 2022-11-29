@@ -15,10 +15,7 @@ public class CommandController {
     CommandServiceImpl Commandservice;
 
 
-    @GetMapping("/commande")
-    public List<Command> findAllCommand(){
-       return Commandservice.findAll();
-    }
+
 
     @PostMapping("/commande")
     public Command saveCommand(@RequestBody Command command){

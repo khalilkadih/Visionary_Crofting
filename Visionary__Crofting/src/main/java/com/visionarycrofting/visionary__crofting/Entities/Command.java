@@ -1,6 +1,7 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,9 +22,8 @@ public class Command {
     private String commandDate;
     private Double commandTotalPrice;
     @ManyToOne
+    @JsonManagedReference
     private Client client;
     @OneToMany(mappedBy = "command")
     private List<CommandItem> commandItem;
-
-
 }
