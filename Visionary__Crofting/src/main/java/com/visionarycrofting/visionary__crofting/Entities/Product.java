@@ -1,5 +1,6 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,9 @@ import java.util.List;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     @OneToMany(mappedBy = "product")
+    @JsonBackReference
     private List<CommandItem> referenceOfProduct;
     @Column
     private String productName;
@@ -28,6 +30,7 @@ public class Product {
     @Column
     private Integer quantity;
     @ManyToOne
+    @JsonBackReference
     private Stock stock;
 
 }
