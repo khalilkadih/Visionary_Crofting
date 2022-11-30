@@ -1,8 +1,9 @@
-package com.visionarycrofting.visionary__crofting.Service;
+package com.visionarycrofting.visionary__crofting.Service.impl;
 
 import com.visionarycrofting.visionary__crofting.Dao.CommandRepository;
 import com.visionarycrofting.visionary__crofting.Entities.Command;
 import com.visionarycrofting.visionary__crofting.Exception.CommandNotFoundException;
+import com.visionarycrofting.visionary__crofting.Service.CommandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 ;import java.util.List;
@@ -31,8 +32,7 @@ public class CommandServiceImpl implements CommandService {
     }
 
     @Override
-    public List<Command> findAll() {
-        return commandRepository.findAll();
+    public List<Command> findAll() {return commandRepository.findAll();
     }
 
     @Override
