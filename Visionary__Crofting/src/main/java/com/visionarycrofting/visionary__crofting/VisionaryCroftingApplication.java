@@ -29,13 +29,5 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
         //c.setCommandTotalPrice(123.0);
         //cs.saveCommande(c);
 
-<<<<<<< HEAD
-
-=======
-        List<Command> commands=cs.findAll();
-        commands.forEach((c)->{
-        System.out.println(c.getCommandDate());
-        });
->>>>>>> cbf86d41550283d68dd6d92bb666baba9224a46f
     }
 }

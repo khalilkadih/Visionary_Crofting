@@ -33,5 +33,4 @@ public class VendorController {
         return vendorService.updateVendor(vendor);
     }
 
-
 }
