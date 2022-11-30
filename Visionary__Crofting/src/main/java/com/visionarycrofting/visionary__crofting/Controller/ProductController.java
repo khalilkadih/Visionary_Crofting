@@ -32,5 +32,9 @@ public class ProductController {
         productServiceImp.deleteProduct(id);
 
     }
+    public Product deleteProduct(Product product){
+        //traitement
+    return product;
+    }
 
 }
