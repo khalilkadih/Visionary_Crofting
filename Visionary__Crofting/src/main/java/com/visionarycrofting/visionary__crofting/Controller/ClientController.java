@@ -30,7 +30,17 @@ public class ClientController {
        }else{
            return  null;
        }
-
+        }
+    @DeleteMapping("/client/{id}")
+    public String deleteClientById(@PathVariable("id") int id) {
+        clientService.delete(id);
+        return "Deleted Successfully";
     }
-
+    @PutMapping("/updateClient/{id}")
+    public Client updateCommande(@RequestBody Client client,@PathVariable("id") int clientId)
+    { return clientService.update(client, clientId); }
+    @GetMapping("/Clients")
+    public List<Client> findAll() { return clientService.findAll();}
 }
+
+
