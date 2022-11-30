@@ -9,4 +9,6 @@ public interface CommandService {
     List<Command> findAll();
     Command update(Command command,int commandeId);
     void  delete(int id);
+
+    List<Command> listAll(String keyword);
 }

@@ -1,5 +1,6 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,11 +17,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-/*
-    @OneToMany(mappedBy = "product")
-    @JsonBackReference
-    private List<CommandItem> referenceOfProduct;
-*/
+
     @ManyToOne
     private CommandItem commandItem;
     @Column
