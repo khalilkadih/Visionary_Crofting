@@ -31,5 +31,9 @@ public class ProductServiceImp {
     public void update(Product product){
         productDao.save(product);
     }
+    public List<Product> filterProduct(Integer id,String property){
+        return property.equals("quantity") ? productDao.findProductByStockIdOrderByQuantity(id): property.equals("price") ? productDao.findProductByStockIdOrderByProductPrice(id): null;
+    }
+
 }
 
