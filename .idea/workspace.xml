@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="creation filter">
+    <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="Resolve Conflit">
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/ProductController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/CallOfferRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/ProductDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CallOfferService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CallOfferServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/ProductServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/CommandItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/CommandItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" afterDir="false" />
@@ -145,7 +146,7 @@
       <workItem from="1669649467449" duration="1238000" />
       <workItem from="1669707393390" duration="4911000" />
       <workItem from="1669713662009" duration="7440000" />
-      <workItem from="1669744678155" duration="23872000" />
+      <workItem from="1669744678155" duration="24600000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1669581290951</created>
@@ -214,6 +215,7 @@
     <MESSAGE value="Creation Controller" />
     <MESSAGE value="Creation CommandeItem" />
     <MESSAGE value="creation filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation filter" />
+    <MESSAGE value="Resolve Conflit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolve Conflit" />
   </component>
 </project>
