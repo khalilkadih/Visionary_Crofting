@@ -30,6 +30,7 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
 
         //cs.saveCommande(c);
 
+
 /*        Stock stock = new Stock();
 
         stock.setEmail("khalil@email.com");
