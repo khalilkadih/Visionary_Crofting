@@ -17,7 +17,6 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     @ManyToOne
     private CommandItem commandItem;
     @Column
@@ -31,6 +30,7 @@ public class Product {
     @Column
     private Integer quantity;
     @ManyToOne
+    @JsonBackReference
     private Stock stock;
 
 }

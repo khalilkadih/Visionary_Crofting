@@ -1,5 +1,7 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,6 +15,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties("products")
 public class CommandItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,13 +23,12 @@ public class CommandItem {
     private String referenceOfItem;
     private Integer itemQuantity;
     private Double itemUnitPrice;
-  /*  @ManyToOne
-    @JsonManagedReference
-    private Product product;*/
 
     @OneToMany(mappedBy = "commandItem")
+    @JsonManagedReference
     private List<Product> products;
 
     @ManyToOne
+    @JsonBackReference
     private Command command;
 }

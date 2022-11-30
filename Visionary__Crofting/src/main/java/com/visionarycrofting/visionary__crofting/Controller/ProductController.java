@@ -21,6 +21,7 @@ public class ProductController {
     public Product getProductByID(@PathVariable(value = "id") Long id){
          return productServiceImp.getProductByID(id);
     }
+
     @PostMapping("/add")
     public void saveProduct(@RequestBody Product product){
         System.out.println("hello from controller"+ product.toString());
@@ -36,9 +37,9 @@ public class ProductController {
         productServiceImp.deleteProduct(id);
         return "product deleted Successfully";
     }
-  /*  @DeleteMapping("/deleteProduct")
-    public Product deleteProduct(Product product){
-
-    }*/
+    @GetMapping("filter/{property}/{id}")
+    public List<Product> filterProductsByStock(@PathVariable Integer id,@PathVariable String property){
+        return productServiceImp.filterProduct(id,property);
+    }
 
 }
