@@ -36,8 +36,5 @@ public class ProductController {
         //traitement
     return product;
     }
-    @GetMapping("filter/{property}/{id}")
-    public List<Product> filterProductsByStock(@PathVariable Integer id,@PathVariable String property){
-        return productServiceImp.filterProduct(id,property);
-    }
+
 }

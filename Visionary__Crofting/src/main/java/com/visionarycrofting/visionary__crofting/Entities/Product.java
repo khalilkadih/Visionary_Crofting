@@ -31,7 +31,6 @@ public class Product {
     @Column
     private Integer quantity;
     @ManyToOne
-    @JsonBackReference
     private Stock stock;
 
 }

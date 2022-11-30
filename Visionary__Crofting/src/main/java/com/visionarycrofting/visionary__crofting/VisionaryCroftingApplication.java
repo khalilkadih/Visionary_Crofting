@@ -11,8 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.List;
-
 @SpringBootApplication
 public class VisionaryCroftingApplication implements CommandLineRunner {
 /*    @Autowired
@@ -24,9 +22,13 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
 
-
     public void run(String... args) throws Exception {
+        //Command c = new Command();
+        //c.setReference("HHH");
+        //c.setCommandDate("1999-22-44");
+        //c.setCommandTotalPrice(123.0);
 
+        //cs.saveCommande(c);
 
 /*        Stock stock = new Stock();
 

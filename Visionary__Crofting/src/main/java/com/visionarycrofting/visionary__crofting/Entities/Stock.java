@@ -1,6 +1,5 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +11,6 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties({"product","callOffers"})
 public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
