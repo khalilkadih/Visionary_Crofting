@@ -3,7 +3,10 @@ package com.visionarycrofting.visionary__crofting.Controller;
 
 import com.visionarycrofting.visionary__crofting.Entities.Command;
 import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;
+import io.swagger.models.Model;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,12 +18,12 @@ public class CommandController {
     CommandServiceImpl Commandservice;
 
 
-    @PostMapping("/commande")
+    @PostMapping(value = "/commande")
     public Command saveCommand(@RequestBody Command command){
         return  Commandservice.saveCommande(command);
     }
 
-    @GetMapping("/salim")
+    @GetMapping("/commande")
     public List<Command> findAll() { return Commandservice.findAll();}
 
     @PutMapping("/commande/{id}")
@@ -31,6 +34,12 @@ public class CommandController {
     public String deleteCommandById(@PathVariable("id") int commandId) {
         Commandservice.delete(commandId);
         return "Deleted Successfully";
-
+    }
+    @ModelAttribute
+    @GetMapping(value = "/search")
+    public List<Command> search( @PathVariable("keyword") String keyword){
+        return Commandservice.listAll(keyword);
+        /*model.addAttribute("listCommand", listCommand);
+        model.addAttribute("keyword", keyword);*/
     }
 }

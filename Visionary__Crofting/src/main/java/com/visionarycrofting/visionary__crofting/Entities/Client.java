@@ -1,7 +1,8 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,8 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Client {
+@JsonIgnoreProperties("command")
+public class Client implements  java.io.Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -21,7 +23,7 @@ public class Client {
     private String password;
     private String phone;
     @OneToMany(mappedBy = "client")
-    @JsonIgnore
+    @JsonManagedReference
     private List<Command> command;
 
 }
