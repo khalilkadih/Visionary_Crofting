@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="Creation CommandeItem">
-      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/CommandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/CommandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/CommandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Command.java" afterDir="false" />
+    <list default="true" id="b136a16f-c248-4088-9cde-2f8906523922" name="Changes" comment="creation filter">
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/CallOfferRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CallOfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CallOfferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/ProductServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/CommandItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/CommandItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/CommandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/impl/CommandItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/impl/CommandItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/impl/CommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/Service/impl/CommandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/java/com/visionarycrofting/visionary__crofting/VisionaryCroftingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visionary__Crofting/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Visionary__Crofting/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +145,7 @@
       <workItem from="1669649467449" duration="1238000" />
       <workItem from="1669707393390" duration="4911000" />
       <workItem from="1669713662009" duration="7440000" />
-      <workItem from="1669744678155" duration="23521000" />
+      <workItem from="1669744678155" duration="23872000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1669581290951</created>
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669744397796</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="creation filter">
+      <created>1669812233097</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669812233097</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +213,7 @@
     <MESSAGE value="Cration test" />
     <MESSAGE value="Creation Controller" />
     <MESSAGE value="Creation CommandeItem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation CommandeItem" />
+    <MESSAGE value="creation filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation filter" />
   </component>
 </project>
