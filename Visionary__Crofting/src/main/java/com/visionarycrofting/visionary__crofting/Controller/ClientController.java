@@ -22,11 +22,11 @@ public class ClientController {
     public Client findByEmail(@PathVariable String email){
         return  clientService.findByEmail(email);
     }
-    @PostMapping("/login/{email}/{password}")
-    public Client login(@PathVariable String email ,@PathVariable String password){
-       Client client= clientService.findByEmail(email);
-       if(client.getEmail().equals(email)&& client.getPassword().equals(password)){
-           return  client;
+    @PostMapping("/login")
+    public Client login(@RequestBody Client client){
+       Client client1= clientService.findByEmail(client.getEmail());
+       if(client1.getEmail().equals(client.getEmail())&& client1.getPassword().equals(client.getPassword())){
+           return  client1;
        }else{
            return  null;
        }
