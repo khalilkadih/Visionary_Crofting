@@ -36,6 +36,7 @@ public class ProductController {
         productServiceImp.deleteProduct(id);
         return "product deleted Successfully";
     }
+
   /*  @DeleteMapping("/deleteProduct")
     public Product deleteProduct(Product product){
 
