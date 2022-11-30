@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -40,14 +41,31 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public Client update(Client client) {
-        return clientRepository.save(client);
+    public Client update(Client client, int clientId) {
+    Client existingClient=clientRepository.findById(clientId).get();
+    if (Objects.nonNull(client.getEmail()) && !"".equalsIgnoreCase(client.getEmail())) {
+        existingClient.setEmail(client.getEmail());
     }
+
+    if (Objects.nonNull(client.getPhone()) && !"".equalsIgnoreCase(client.getPhone())) {
+        existingClient.setPhone(client.getPhone());
+    }
+
+    if (Objects.nonNull(client.getPassword())) {
+        existingClient.setPassword(client.getPassword());
+    }
+
+    return clientRepository.save(existingClient);
+
+}
 
     @Override
     public void delete(int id) {
     clientRepository.deleteById(id);
     }
+
+
+
 
     @Service
     public static class VendorServiceImpl implements VendorService {
