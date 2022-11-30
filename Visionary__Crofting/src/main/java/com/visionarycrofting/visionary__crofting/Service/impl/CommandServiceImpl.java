@@ -6,6 +6,7 @@ import com.visionarycrofting.visionary__crofting.Exception.CommandNotFoundExcept
 import com.visionarycrofting.visionary__crofting.Service.CommandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 ;import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -20,15 +21,15 @@ public class CommandServiceImpl implements CommandService {
 
     @Override
     public Command saveCommande(Command command) {
-        String commandeDtae = command.getCommandDate();
-        String ref = command.getReference();
-        Command com = commandRepository.save(command);
-        if(com == null){
+        /*String commandeDtae = command.getCommandDate();
+        String ref = command.getReference();*/
+       //Command com =
+       /* if(com == null){
             throw  new CommandNotFoundException();
         } else if (commandeDtae.isEmpty() || ref.isEmpty() ) {
             throw  new CommandNotFoundException();
-        }
-        return com;
+        }*/
+        return commandRepository.save(command);
     }
 
     @Override
@@ -61,5 +62,13 @@ public class CommandServiceImpl implements CommandService {
         }else{
             System.out.println("not found");
         }
+    }
+
+    @Override
+    public List<Command> listAll(String keyword) {
+        if (keyword != null) {
+            return commandRepository.search(keyword);
+        }
+        return commandRepository.findAll();
     }
 }

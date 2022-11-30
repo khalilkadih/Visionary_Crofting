@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
+
 @Service
 public class CommandItemServiceImpl implements CommandItemService {
 
-    //CommandItem commandItem = new CommandItem();
+    CommandItem commandItem = new CommandItem();
     @Autowired
     private CommandItemRepository cIR;
 
@@ -20,17 +22,29 @@ public class CommandItemServiceImpl implements CommandItemService {
     }
 
     @Override
-    public List<CommandItem> findAllItem() {
-        return null;
-    }
+    public List<CommandItem> findAllItem() { return cIR.findAll(); }
 
     @Override
     public CommandItem updateItem(CommandItem commandItem, int id) {
-        return null;
+        CommandItem existingItem=cIR.findById(id).get();
+        if (Objects.nonNull(commandItem.getReferenceOfItem()) && !"".equalsIgnoreCase(commandItem.getReferenceOfItem())) {
+            existingItem.setReferenceOfItem(commandItem.getReferenceOfItem());
+        }
+
+        if (Objects.nonNull(commandItem.getItemQuantity())) {
+            existingItem.setItemQuantity(commandItem.getItemQuantity());
+        }
+
+        if (Objects.nonNull(commandItem.getItemUnitPrice())) {
+            existingItem.setItemUnitPrice(commandItem.getItemUnitPrice());
+        }
+
+        return cIR.save(existingItem);
     }
 
     @Override
     public void delete(int id) {
+       cIR.deleteById(id);
 
     }
 }

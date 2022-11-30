@@ -1,15 +1,19 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
 import java.util.Date;
 import java.util.List;
 
+
 @Data
+@Table(name = "commandItem")
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,13 +24,15 @@ public class CommandItem {
     private String referenceOfItem;
     private Integer itemQuantity;
     private Double itemUnitPrice;
-  /*  @ManyToOne
+
+    @ManyToOne
     @JsonManagedReference
-    private Product product;*/
+    private Product product;
 
     @OneToMany(mappedBy = "commandItem")
     private List<Product> products;
-
     @ManyToOne
+    //@JsonIgnore
+    @JoinColumn(name = "command_id", referencedColumnName = "id")
     private Command command;
 }
