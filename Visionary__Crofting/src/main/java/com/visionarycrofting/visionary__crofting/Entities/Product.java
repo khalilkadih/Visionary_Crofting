@@ -16,9 +16,13 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+/*
     @OneToMany(mappedBy = "product")
     @JsonBackReference
     private List<CommandItem> referenceOfProduct;
+*/
+    @ManyToOne
+    private CommandItem commandItem;
     @Column
     private String productName;
     @Column

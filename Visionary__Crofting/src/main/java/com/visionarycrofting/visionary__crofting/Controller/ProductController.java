@@ -19,7 +19,8 @@ public class ProductController {
         return productServiceImp.productList();
     }
     @PostMapping("/add")
-    public void saveProduct(Product product){
+    public void saveProduct(@RequestBody Product product){
+        System.out.println("hello from controller"+ product.toString());
          productServiceImp.saveProduct(product);
     }
 

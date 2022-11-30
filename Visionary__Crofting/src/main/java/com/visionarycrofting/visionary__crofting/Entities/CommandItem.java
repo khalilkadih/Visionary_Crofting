@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -19,9 +20,13 @@ public class CommandItem {
     private String referenceOfItem;
     private Integer itemQuantity;
     private Double itemUnitPrice;
-    @ManyToOne
+  /*  @ManyToOne
     @JsonManagedReference
-    private Product product;
+    private Product product;*/
+
+    @OneToMany(mappedBy = "commandItem")
+    private List<Product> products;
+
     @ManyToOne
     private Command command;
 }
