@@ -13,5 +13,5 @@ public interface ClientService {
     List<Client> findAll();
     Client update(Client client);
     void  delete(int id);
-
+    Client findClientByCommandAndAndEmailAAndAndId(String email, int id);
 }

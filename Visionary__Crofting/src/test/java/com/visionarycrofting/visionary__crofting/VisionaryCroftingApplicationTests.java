@@ -23,7 +23,6 @@ class VisionaryCroftingApplicationTests {
     CommandServiceImpl cs ;
     @Test
     void CommandAdd() {
-
         Command c = new Command();
         c.setReference("HHH");
         c.setCommandDate("1999-22-44");
@@ -39,5 +38,4 @@ class VisionaryCroftingApplicationTests {
         assertThat(email).isNotEmpty().isNotNull();
        assertThat( clientService.findByEmail(email)).isNotNull();
     }
-  
 }

@@ -3,6 +3,7 @@ package com.visionarycrofting.visionary__crofting.Service.impl;
 import com.visionarycrofting.visionary__crofting.Dao.ClientRepository;
 import com.visionarycrofting.visionary__crofting.Dao.VendorRepository;
 import com.visionarycrofting.visionary__crofting.Entities.Client;
+import com.visionarycrofting.visionary__crofting.Entities.Command;
 import com.visionarycrofting.visionary__crofting.Entities.Vendor;
 import com.visionarycrofting.visionary__crofting.Service.ClientService;
 import com.visionarycrofting.visionary__crofting.Service.VendorService;
@@ -48,6 +49,15 @@ public class ClientServiceImpl implements ClientService {
     public void delete(int id) {
     clientRepository.deleteById(id);
     }
+
+
+//    @Override
+//    public Client findClientByCommandAndAndEmailAAndAndId(String email, int id) {
+//        Client emailClient=clientRepository.findByEmail(email);
+//        Optional<Client> idClient=clientRepository.findById(id);
+//        if(emailClient!=)
+//        return null;
+//    }
 
     @Service
     public static class VendorServiceImpl implements VendorService {
