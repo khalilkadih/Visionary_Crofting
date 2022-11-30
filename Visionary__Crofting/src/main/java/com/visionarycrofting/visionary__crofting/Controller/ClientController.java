@@ -22,15 +22,25 @@ public class ClientController {
     public Client findByEmail(@PathVariable String email){
         return  clientService.findByEmail(email);
     }
-    @PostMapping("/login/{email}/{password}")
-    public Client login(@PathVariable String email ,@PathVariable String password){
-       Client client= clientService.findByEmail(email);
-       if(client.getEmail().equals(email)&& client.getPassword().equals(password)){
-           return  client;
+    @PostMapping("/login")
+    public Client login(@RequestBody Client client){
+       Client client1= clientService.findByEmail(client.getEmail());
+       if(client1.getEmail().equals(client.getEmail())&& client1.getPassword().equals(client.getPassword())){
+           return  client1;
        }else{
            return  null;
        }
-
+        }
+    @DeleteMapping("/client/{id}")
+    public String deleteClientById(@PathVariable("id") int id) {
+        clientService.delete(id);
+        return "Deleted Successfully";
     }
-
+    @PutMapping("/updateClient/{id}")
+    public Client updateCommande(@RequestBody Client client,@PathVariable("id") int clientId)
+    { return clientService.update(client, clientId); }
+    @GetMapping("/Clients")
+    public List<Client> findAll() { return clientService.findAll();}
 }
+
+

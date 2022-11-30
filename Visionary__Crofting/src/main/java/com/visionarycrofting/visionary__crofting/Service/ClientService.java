@@ -11,7 +11,6 @@ public interface ClientService {
     Client findByEmail(String email);
     Boolean existsByEmail(String email);
     List<Client> findAll();
-    Client update(Client client);
+    Client update(Client client, int clientId);
     void  delete(int id);
-
 }

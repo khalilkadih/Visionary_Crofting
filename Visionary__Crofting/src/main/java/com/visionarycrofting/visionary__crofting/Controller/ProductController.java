@@ -1,6 +1,8 @@
 package com.visionarycrofting.visionary__crofting.Controller;
 
+import com.visionarycrofting.visionary__crofting.Entities.CallOffer;
 import com.visionarycrofting.visionary__crofting.Entities.Product;
+import com.visionarycrofting.visionary__crofting.Service.CallOfferService;
 import com.visionarycrofting.visionary__crofting.Service.ProductService;
 import com.visionarycrofting.visionary__crofting.Service.ProductServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +15,6 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private ProductServiceImp productServiceImp;
-
     @GetMapping("/allProducts")
     public List<Product> productList(){
         return productServiceImp.productList();
