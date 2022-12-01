@@ -1,17 +1,12 @@
 package com.visionarycrofting.visionary__crofting;
 
+import com.visionarycrofting.visionary__crofting.Dao.ProductDao;
 import com.visionarycrofting.visionary__crofting.Entities.*;
-import com.visionarycrofting.visionary__crofting.Service.ProductServiceImp;
 import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import java.util.List;
 
 @SpringBootApplication
 public class VisionaryCroftingApplication implements CommandLineRunner {
@@ -20,13 +15,21 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
     private ProductServiceImp productServiceImp;*/
     //commandServiceImpl cs = new commandServiceImpl();
+/*
+@Autowired
+ProductDao productDao;
+*/
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
 
-
     public void run(String... args) throws Exception {
+        //Command c = new Command();
+        //c.setReference("HHH");
+        //c.setCommandDate("1999-22-44");
+        //c.setCommandTotalPrice(123.0);
 
+        //cs.saveCommande(c);
 
 /*        Stock stock = new Stock();
 
@@ -97,8 +100,11 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
 */
 /*
         productServiceImp.deleteProduct(88L);
-*/
+*//*
         System.out.println("======================================");
+        Long res =productDao.countByProductName("lenovo");
+
+        System.out.println("====================== your res is ================"+res);*/
     //just for create branch
     }
 }

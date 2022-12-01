@@ -1,6 +1,7 @@
 package com.visionarycrofting.visionary__crofting.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,11 +13,11 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties({"product","callOffers"})
+@JsonIgnoreProperties({"product" ,"callOffers" })
 public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     @Column
     private String firstName;
     @Column
@@ -27,9 +28,11 @@ public class Stock {
     private String password;
 
     @OneToMany(mappedBy = "stock")
+    @JsonManagedReference
     private List<Product> product;
 
     @OneToMany(mappedBy = "stock")
+    @JsonManagedReference
     private List<CallOffer> callOffers;
 
 }
