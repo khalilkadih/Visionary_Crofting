@@ -35,6 +35,7 @@ public class ProductServiceImp {
         return property.equals("quantity") ? productDao.findProductByStockIdOrderByQuantity(id): property.equals("price") ? productDao.findProductByStockIdOrderByProductPrice(id): null;
     }
 
+
     public Long countByProductName(String productName){
         return productDao.countByProductName(productName);
 
@@ -46,7 +47,6 @@ public class ProductServiceImp {
         }
         return message;
     }
-
 
 }
 
