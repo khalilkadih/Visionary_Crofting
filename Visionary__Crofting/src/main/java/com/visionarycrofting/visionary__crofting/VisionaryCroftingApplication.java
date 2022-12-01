@@ -1,17 +1,8 @@
 package com.visionarycrofting.visionary__crofting;
 
-import com.visionarycrofting.visionary__crofting.Entities.*;
-import com.visionarycrofting.visionary__crofting.Service.ProductServiceImp;
-import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import java.util.List;
 
 @SpringBootApplication
 public class VisionaryCroftingApplication implements CommandLineRunner {

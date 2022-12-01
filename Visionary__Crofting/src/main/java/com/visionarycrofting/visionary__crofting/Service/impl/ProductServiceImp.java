@@ -1,4 +1,4 @@
-package com.visionarycrofting.visionary__crofting.Service;
+package com.visionarycrofting.visionary__crofting.Service.impl;
 
 import com.visionarycrofting.visionary__crofting.Dao.ProductDao;
 import com.visionarycrofting.visionary__crofting.Entities.Product;
@@ -34,6 +34,5 @@ public class ProductServiceImp {
     public List<Product> filterProduct(Integer id,String property){
         return property.equals("quantity") ? productDao.findProductByStockIdOrderByQuantity(id): property.equals("price") ? productDao.findProductByStockIdOrderByProductPrice(id): null;
     }
-
 }
 

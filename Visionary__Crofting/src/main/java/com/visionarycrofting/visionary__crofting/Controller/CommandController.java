@@ -35,8 +35,8 @@ public class CommandController {
         Commandservice.delete(commandId);
         return "Deleted Successfully";
     }
-    @ModelAttribute
-    @GetMapping(value = "/search")
+
+    @GetMapping( "/search/{keyword}")
     public List<Command> search( @PathVariable("keyword") String keyword){
         return Commandservice.listAll(keyword);
         /*model.addAttribute("listCommand", listCommand);

@@ -1,8 +1,7 @@
 package com.visionarycrofting.visionary__crofting.Controller;
 
 import com.visionarycrofting.visionary__crofting.Entities.Product;
-import com.visionarycrofting.visionary__crofting.Service.ProductService;
-import com.visionarycrofting.visionary__crofting.Service.ProductServiceImp;
+import com.visionarycrofting.visionary__crofting.Service.impl.ProductServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

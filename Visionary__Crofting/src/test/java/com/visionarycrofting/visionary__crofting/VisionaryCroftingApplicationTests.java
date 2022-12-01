@@ -24,6 +24,7 @@ class VisionaryCroftingApplicationTests {
         c.setCommandTotalPrice(123.0);
         cs.saveCommande(c);
         List<Command> commandelist = cs.findAll();
+
         Command lastcheck = commandelist.get(commandelist.size() - 1);
         assertEquals(c.getReference(),lastcheck.getReference());
     }
