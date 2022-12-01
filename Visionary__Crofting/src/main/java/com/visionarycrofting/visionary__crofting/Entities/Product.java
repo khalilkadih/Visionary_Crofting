@@ -17,7 +17,6 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     @ManyToOne
     private CommandItem commandItem;
     @Column

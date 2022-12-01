@@ -34,5 +34,19 @@ public class ProductServiceImp {
     public List<Product> filterProduct(Integer id,String property){
         return property.equals("quantity") ? productDao.findProductByStockIdOrderByQuantity(id): property.equals("price") ? productDao.findProductByStockIdOrderByProductPrice(id): null;
     }
+
+
+    public Long countByProductName(String productName){
+        return productDao.countByProductName(productName);
+
+    }
+    public String checkRuptureStock(String nameProduct){
+        String message="";
+        if(countByProductName(nameProduct)>20){
+           message="Alert !!! your stock is Almost in out ";
+        }
+        return message;
+    }
+
 }
 
