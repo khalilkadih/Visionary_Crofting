@@ -1,6 +1,7 @@
 package com.visionarycrofting.visionary__crofting;
 
 
+import com.visionarycrofting.visionary__crofting.Entities.Client;
 import com.visionarycrofting.visionary__crofting.Entities.Command;
 import com.visionarycrofting.visionary__crofting.Service.ClientService;
 import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;

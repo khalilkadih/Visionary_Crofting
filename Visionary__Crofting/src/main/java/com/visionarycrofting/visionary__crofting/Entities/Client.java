@@ -29,5 +29,4 @@ public class Client implements  java.io.Serializable{
     @OneToMany(mappedBy = "client")
     @JsonManagedReference
     private List<Command> command;
-
 }
