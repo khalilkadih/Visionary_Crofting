@@ -1,5 +1,6 @@
 package com.visionarycrofting.visionary__crofting;
 
+import com.visionarycrofting.visionary__crofting.Dao.ProductDao;
 import com.visionarycrofting.visionary__crofting.Entities.*;
 import com.visionarycrofting.visionary__crofting.Service.impl.CommandServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,10 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
     @Autowired
     private ProductServiceImp productServiceImp;*/
     //commandServiceImpl cs = new commandServiceImpl();
+/*
+@Autowired
+ProductDao productDao;
+*/
     public static void main(String[] args) {
         SpringApplication.run(VisionaryCroftingApplication.class, args);
     }
@@ -98,8 +103,11 @@ public class VisionaryCroftingApplication implements CommandLineRunner {
 */
 /*
         productServiceImp.deleteProduct(88L);
-*/
+*//*
         System.out.println("======================================");
+        Long res =productDao.countByProductName("lenovo");
+
+        System.out.println("====================== your res is ================"+res);*/
     //just for create branch
     }
 }
